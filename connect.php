@@ -1,0 +1,10 @@
+<?php
+try{
+    $db=new PDO('mysql:host=localhost;dbname=crud','root','');
+    $db->exec('SET NAMES "UTF8"');
+}
+catch(PDOException $e){
+   echo'erreur:'.$e->getMessage();
+   die(); 
+}
+?>
